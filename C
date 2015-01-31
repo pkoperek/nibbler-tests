@@ -1,0 +1,103 @@
+"function":
+{"function": "minus", "operands": [ 
+    {"function": "mul", "operands": [   
+        {"function": "mul", "operands": [       
+            {"function": "mul", "operands": [
+                {"function": "mul", "operands": [
+                    {"function": "minus", "operands": [
+                        {"function": "var_0"},
+                        {"function": "var_1"}
+                    ]},
+                    {"function": "mul", "operands": [
+                        {"function": "var_0"},
+                        {"function": "1.0951405"}
+                    ]}
+                ]}, 
+                {"function": "sin", "operands": [
+                    {"function": "mul", "operands": [
+                        {"function": "var_0"},
+                        {"function": "var_1"}
+                    ]}
+                ]}
+            ]},
+            {"function": "cos", "operands": [
+                {"function": "plus", "operands": [
+                    {"function": "cos", "operands": [
+                        {"function": "var_1"}
+                    ]},
+                    {"function": "div", "operands": [
+                        {"function": "1.0951405"}, 
+                        {"function": "3.01411"}
+                    ]}
+                ]}
+            ]}
+        ]},
+        {"function": "mul", "operands": [       
+            {"function": "sin", "operands": [
+                {"function": "plus", "operands": [
+                    {"function": "minus", "operands": [
+                        {"function": "var_0"},
+                        {"function": "var_1"}
+                    ]},
+                    {"function": "div", "operands": [
+                        {"function": "2.377"},
+                        {"function": "2.817"}
+                    ]}
+                ]}
+            ]},
+            {"function": "minus", "operands": [         
+                {"function": "mul", "operands": [           
+                    {"function": "cos", "operands": [
+                         {"function": "var_0"} 
+                    ]},
+                    {"function": "plus", "operands": [
+                        {"function": "var_0"},
+                        {"function": "var_1"}
+                    ]}
+                ]},
+                {"function": "minus", "operands": [
+                    {"function": "sin", "operands": [
+                        {"function": "var_0"}
+                    ]},
+                    {"function": "sin", "operands": [
+                        {"function": "var_1"}
+                    ]}
+                ]}
+            ]}
+        ]}  
+    ]},
+    {"function": "cos", "operands": [
+        {"function": "div", "operands": [
+            {"function": "div", "operands": [
+                {"function": "cos", "operands": [
+                    {"function": "div", "operands": [
+                        {"function": "var_0"},
+                        {"function": "var_1"}
+                    ]}
+                ]},         
+                {"function": "minus", "operands": [
+                    {"function": "plus", "operands": [
+                        {"function": "var_0"},
+                        {"function": "var_1"}
+                    ]},                 
+                    {"function": "minus", "operands": [
+                        {"function": "var_0"},
+                        {"function": "2.3776817"}
+                    ]}
+                ]}                  
+            ]},         
+            {"function": "sin", "operands": [
+                {"function": "plus", "operands": [
+                    {"function": "plus", "operands": [
+                        {"function": "7.305318"},
+                        {"function": "var_0"}
+                    ]},
+                    {"function": "minus", "operands": [
+                        {"function": "var_0"},
+                        {"function": "var_1"}
+                    ]}
+                ]}
+            ]}
+        ]}
+    ]}
+]}

@@ -1,0 +1,10 @@
+"function":   {   
+    "function": "sin",
+        "operands": [{
+            "function": "plus",
+            "operands": [
+            { "function": "var_1" },
+            { "function": "var_0" }
+            ]
+        }]
+}

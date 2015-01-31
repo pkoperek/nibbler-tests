@@ -1,0 +1,43 @@
+"function":   
+{"function": "div", "operands": [
+    {"function": "minus", "operands": [
+        {"function": "plus", "operands": [
+            {"function": "minus", "operands": [
+                {"function": "var_0"},
+                {"function": "var_1"}
+            ]},
+            {"function": "cos", "operands": [
+                {"function": "var_0"}  
+            ]}
+        ]},
+        {"function": "minus", "operands": [
+            {"function": "minus", "operands": [
+                {"function": "4.905627250671387"},
+                {"function": "5.8"}
+            ]},
+            {"function": "minus", "operands": [
+                {"function": "var_0"},
+                {"function": "var_1"}
+            ]}
+       ]}    
+    ]},
+    {"function": "plus", "operands": [
+        {"function": "plus", "operands": [
+            {"function": "cos", "operands": [
+                {"function": "4.56575"}
+            ]},
+            {"function": "cos", "operands": [
+               {"function": "var_0"}
+            ]}
+        ]},
+        {"function": "mul", "operands": [
+            {"function": "sin", "operands": [
+                {"function": "var_0"}
+            ]},
+            {"function": "div", "operands": [
+                {"function": "var_0"},
+                {"function": "var_1"}
+            ]}
+        ]}
+    ]}
+]}

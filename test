@@ -1,0 +1,27 @@
+#!/bin/bash
+
+MASTER=$1
+URL="http://$MASTER:8080/evaluate"
+TESTCASE=$2
+USE_HDFS=$3
+FUNCTION=$4
+
+if [ $USE_HDFS == "Y" ]; then
+    DATASET_URL="hdfs://$MASTER/tmp"
+else 
+    DATASET_URL="/tmp"
+fi
+
+rm -f POST.tmp
+echo "{" >> POST.tmp
+echo "\"inputFile\": \"$DATASET_URL/ds_$TESTCASE.txt\"," >> POST.tmp
+cat $FUNCTION >> POST.tmp
+echo "}" >> POST.tmp
+
+START=`date +%s%N`
+curl -X POST -d @POST.tmp -H "Content-Type: application/json" $URL
+END=`date +%s%N`
+
+DIFF=`echo "$END - $START"|bc`
+
+echo "Start: $START end: $END diff: $DIFF"
