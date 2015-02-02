@@ -7,7 +7,7 @@ USE_HDFS=$3
 FUNCTION=$4
 
 if [ $USE_HDFS == "Y" ]; then
-    DATASET_URL="hdfs://$MASTER/tmp"
+    DATASET_URL="hdfs://$MASTER/datasets"
 else 
     DATASET_URL="/tmp"
 fi
@@ -19,7 +19,7 @@ cat $FUNCTION >> POST.tmp
 echo "}" >> POST.tmp
 
 START=`date +%s%N`
-curl -X POST -d @POST.tmp -H "Content-Type: application/json" $URL
+curl -s -X POST -d @POST.tmp -H "Content-Type: application/json" $URL
 END=`date +%s%N`
 
 DIFF=`echo "$END - $START"|bc`
