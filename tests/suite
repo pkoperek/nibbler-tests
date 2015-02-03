@@ -1,60 +1,86 @@
 #!/bin/bash
+ 
+MASTER=$1
+
+echo "10m a"
+./test $MASTER 10m Y A
+./test $MASTER 10m Y A
+./test $MASTER 10m Y A
+./test $MASTER 10m Y A
+./test $MASTER 10m Y A
+./test $MASTER 10m Y A
 
 echo "10m b"
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y B
+./test $MASTER 10m Y B
+./test $MASTER 10m Y B
+./test $MASTER 10m Y B
+./test $MASTER 10m Y B
+./test $MASTER 10m Y B
+./test $MASTER 10m Y B
 
 echo "10m C"
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10m Y C
+./test $MASTER 10m Y C
+./test $MASTER 10m Y C
+./test $MASTER 10m Y C
+./test $MASTER 10m Y C
+./test $MASTER 10m Y C
+./test $MASTER 10m Y C
+
+echo "100m a"
+./test $MASTER 100m Y A
+./test $MASTER 100m Y A
+./test $MASTER 100m Y A
+./test $MASTER 100m Y A
+./test $MASTER 100m Y A
+./test $MASTER 100m Y A
 
 echo "100m b"
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y B
+./test $MASTER 100m Y B
+./test $MASTER 100m Y B
+./test $MASTER 100m Y B
+./test $MASTER 100m Y B
+./test $MASTER 100m Y B
+./test $MASTER 100m Y B
 
 echo "100m c"
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 100m Y C
+./test $MASTER 100m Y C
+./test $MASTER 100m Y C
+./test $MASTER 100m Y C
+./test $MASTER 100m Y C
+./test $MASTER 100m Y C
+./test $MASTER 100m Y C
+
+echo "1g a"
+./test $MASTER 1g Y A
+./test $MASTER 1g Y A
+./test $MASTER 1g Y A
+./test $MASTER 1g Y A
+./test $MASTER 1g Y A
+./test $MASTER 1g Y A
 
 echo "1g b"
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y B
+./test $MASTER 1g Y B
+./test $MASTER 1g Y B
+./test $MASTER 1g Y B
+./test $MASTER 1g Y B
+./test $MASTER 1g Y B
+./test $MASTER 1g Y B
 
 echo "1g c"
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 1g Y C
+./test $MASTER 1g Y C
+./test $MASTER 1g Y C
+./test $MASTER 1g Y C
+./test $MASTER 1g Y C
+./test $MASTER 1g Y C
+./test $MASTER 1g Y C
 
 echo "10g b"
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10g Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10g Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10g Y B
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10g Y B
+./test $MASTER 10g Y B
+./test $MASTER 10g Y B
+./test $MASTER 10g Y B
+./test $MASTER 10g Y B
 
 echo "10g c"
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10g Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10g Y C
-./test ec2-54-186-209-248.us-west-2.compute.amazonaws.com 10g Y C
+./test $MASTER 10g Y C
+./test $MASTER 10g Y C
+./test $MASTER 10g Y C
