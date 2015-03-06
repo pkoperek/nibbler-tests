@@ -74,8 +74,13 @@ echo "1g c"
 ./test $MASTER 1g Y C
 ./test $MASTER 1g Y C
 
+echo "10g a"
+./test $MASTER 10g Y A
+./test $MASTER 10g Y A
+./test $MASTER 10g Y A
+./test $MASTER 10g Y A
+
 echo "10g b"
-./test $MASTER 10g Y B
 ./test $MASTER 10g Y B
 ./test $MASTER 10g Y B
 ./test $MASTER 10g Y B
